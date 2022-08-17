@@ -1,4 +1,4 @@
-public class Main{    
+public class Tema3{    
     public static void main(String[] args) {
         // Primera parate - 1st section
         sum(7, 14, 21);
