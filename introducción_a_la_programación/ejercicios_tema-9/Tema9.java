@@ -3,22 +3,20 @@ public class Tema9{
         Cliente client = new Cliente();
         Trabajador employee = new Trabajador();
 
+        client.setName("Celeste");
         client.setAge(30);
-        client.setName("Celeste");;
         client.setTelephone(5529876543L);
-
-        System.out.println(client.getAge());
-        System.out.println(client.getName());
-        System.out.println(client.getTelephone());
+        client.setCredit(50000);
+        System.out.println( client.getName() + " (" + client.getAge() + ") " + " with contact number: " + client.getTelephone() + ". Has $" + client.getCredit() + " of credit in their account."  );
         
-        employee.setAge(28);
+        
         employee.setName("Favio");;
+        employee.setAge(28);
         employee.setTelephone(5521234567L);
-
-
-        System.out.println(employee.getAge());
-        System.out.println(employee.getName());
-        System.out.println(employee.getTelephone());
+        employee.setSalary(50000);
+        
+        System.out.println( employee.getName() + " (" + employee.getAge() + ") " + " with contact number: " + employee.getTelephone() + ". Reach $" + employee.getSalary() + " per year."  );
+        
     }
 }
 
@@ -52,25 +50,25 @@ class Persona {
 
 
 class Cliente extends Persona{
-    private int credito;
+    private double credito;
 
-    public int getCredito() {
+    public double getCredit() {
         return credito;
     }
 
-    public void setCredito(int credito) {
+    public void setCredit(double credito) {
         this.credito = credito;
     }
 }
 
 class Trabajador extends Persona{
-    private int salario;
+    private double salario;
 
-    public int getSalario() {
+    public double getSalary() {
         return salario;
     }
 
-    public void setSalario(int salario) {
+    public void setSalary(double salario) {
         this.salario = salario;
     }
 
