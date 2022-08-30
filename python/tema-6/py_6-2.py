@@ -12,6 +12,7 @@ class Alumno:
 
 juanito = Alumno()
 juanito.set_nombre('Juanito')
-juanito.set_nota(9.7)
+juanito.set_nota('A')
 
-print(juanito._nombre)
+response = 'Alumni {name} reach {grade} as their final grade'.format(name = juanito._nombre, grade = juanito._nota)
+print(response)
