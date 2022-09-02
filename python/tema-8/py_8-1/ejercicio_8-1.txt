@@ -1,0 +1,2 @@
+This is my first text line written from python!
+This is my second text line written from python!
