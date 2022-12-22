@@ -1,7 +1,9 @@
 from functools import reduce
 
+
 def getOdds(iterable):
     return list(filter(lambda x: x % 2 != 0, iterable))
+
 
 def sumOdds(filtered):
     return reduce(lambda a, b: a + b, filtered)
