@@ -1,0 +1,8 @@
+name,birth_date,country,movie,picture,director_id,,,
+Guillermo del Toro,"1964, 10, 9",Mexico,None,None,1,,,
+Alfonso Cuaron,"1961, 11, 28",Mexico,None,None,2,,,
+Joe Russo,"1971, 7, 18",United States,None,None,3,,,
+Anthony Russo,"1970, 2, 3",United States,None,None,4,,,
+Peter Jackson,"1961, 10, 31",New Zealand,None,None,5,,,
+James Cameron,"1954, 8, 16",Canada,None,None,6,,,
+,,,,,,,,
