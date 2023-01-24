@@ -1,11 +1,12 @@
 {% extends "./base.html" %}
 {% block content %}
+    <h2>Director Detail</h2>
     <h2>Where the Directors and Films are altogether</h2>
     <div class="directors-grid-container">
-        {% for director in directors %}
+        {% for movie in movies %}
         <div class="items">
             <a href="#">
-                <img class="directors_image" src="{{director.picture.url}}" alt="{{director.name}}">
+                <img class="directors_image" src="{{movie.poster.url}}" alt="{{movie.title}}">
             </a>
         </div>
         {% endfor %}
