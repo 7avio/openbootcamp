@@ -1,0 +1,15 @@
+{% extends "./base.html" %}
+{% block content %}
+    <h2>Movie Detail</h2>
+    <h2>{{movie.title}}</h2>
+    <h3>{{movie.run_time}}</h3>
+    <h3>{{movie.release}}</h3>
+    <img src="{{movie.poster.url}}" alt="{{movie.title}} poster">
+    <p>{{movie.description}}</p>
+    <h1>Hi there</h1>
+    {% for obj in directors_rel %}
+    <a href="{% url 'filmwho:director_detail' obj.director_id %}">
+        <img src="{{obj.picture.url}}" alt="{{obj.name}}">
+    </a>
+    {% endfor %}
+{% endblock %}

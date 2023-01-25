@@ -11,7 +11,14 @@
 <body>
     <nav class="nav-bar">
         <h1>FilmWho</h1>
-        <a href="#">MOVIES</a>
+        {% if url == 'movie_detail' or  url == 'director_detail'%}
+            <a href="{% url 'filmwho:movies' %}">MOVIES</a>
+            <a href="{% url 'filmwho:index' %}">DIRECTORS</a>
+        {% elif url == 'movies' %}
+            <a href="{% url 'filmwho:index' %}">DIRECTORS</a>
+        {% else%}
+            <a href="{% url 'filmwho:movies' %}">MOVIES</a>
+        {% endif %}
     </nav>
     {% block content %}{% endblock %}
 </body>

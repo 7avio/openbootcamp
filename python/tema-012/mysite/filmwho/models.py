@@ -24,7 +24,6 @@ class Movie(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField(max_length=500)
     run_time = models.TextField(max_length=15)
-    director = models.ManyToManyField(Director, related_name='movies', null=True, blank=True)
     poster = models.ImageField(upload_to='images/posters/', null=True, blank=True)
     release = models.IntegerField(validators=[MinValueValidator(1900), MaxValueValidator(2100)], null=True, blank=True)
 

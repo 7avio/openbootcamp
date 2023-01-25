@@ -1,1 +1,15 @@
+{% extends "./base.html" %}
+{% block content %}
+    <h2>Maister</h2>
+    <h3>{{director.name}}</h3>
+    <img src="{{director.picture.url}}" alt="">
+    <div>
+        {% for obj in movies_rel %}
+        <a href="{% url 'filmwho:movie_detail' obj.movie_id %}">
+            <img src="{{obj.poster.url}}" alt="{{obj.title}}">
+        </a>
+        {% endfor %}
+    </div>
+
+{% endblock %}
 
